@@ -196,7 +196,53 @@
               </tr>
         </tbody>
     </table>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to filter papers by tag
+    function filterPapers(tag) {
+        var papers = document.querySelectorAll('.papers-list li');
+        var years = document.querySelectorAll('.papers-by-year h2');
+        var noResults = document.querySelector('.no-results');
+        var anyResults = false;
 
+        years.forEach(function(year) {
+            var yearHasVisiblePapers = false;
+            var yearPapers = year.nextElementSibling.querySelectorAll('li');
+
+            yearPapers.forEach(function(paper) {
+                var tags = paper.querySelectorAll('.tag');
+                var paperHasTag = Array.from(tags).some(function(t) { return t.textContent.includes(tag); });
+
+                if (tag === '' || paperHasTag) {
+                    paper.style.display = '';
+                    yearHasVisiblePapers = true;
+                    anyResults = true;
+                } else {
+                    paper.style.display = 'none';
+                }
+            });
+
+            // Hide year if no papers are visible
+            year.style.display = yearHasVisiblePapers ? '' : 'none';
+        });
+
+        // Display 'No Results' message if no papers match the filter
+        noResults.style.display = anyResults ? 'none' : 'block';
+    }
+
+    // Event listeners for each tag in the legend
+    document.querySelectorAll('.legend .sub-topics p, .legend .tag').forEach(function(tag) {
+        tag.addEventListener('click', function() {
+            filterPapers(tag.textContent);
+        });
+    });
+
+    // Event listener for the reset filter button
+    document.querySelector('.reset-filters').addEventListener('click', function() {
+        filterPapers('');
+    });
+});
+</script>
 </body>
 
 </html>
