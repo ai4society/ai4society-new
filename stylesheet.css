@@ -504,7 +504,7 @@ button:hover {
   background-color: #f9f9f9; /* Slightly different background to stand out */
   border: 4px solid #ccc; /* Subtle border for the button */
   border-radius: 5px;
-  margin: 10px 0; Ensures spacing on top and bottom */
+  margin: 10px 0;
   padding: 3px 8px;
   font-size: 0.8em; /* Smaller font size */
   display: inline-block;
@@ -526,4 +526,53 @@ button:hover {
   margin-bottom: 0;
   width: 100%; /* Full width of the container */
   order: 2; /* Place it between the items and the button */
+}
+
+/* Funding Section Styles */
+.funding-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.funding-list li {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.funding-list li span.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px; /* Reduced padding for smaller box */
+  margin-right: 3px; /* Reduced margin for closer spacing */
+  border-radius: 12px; /* Adjusted for smaller box */
+  font-size: 0.75em; /* Smaller font size */
+  color: white;
+  font-weight: bold;
+}
+
+/* Fund Type Tag */
+.tag-fund-type {
+  background-color: #2196F3;
+}
+
+.tag-fund-type::before {
+  content: '\f0d6'; /* FontAwesome icon code for a gift */
+  font-family: 'Font Awesome 5 Free'; /* Specify FontAwesome */
+  margin-right: 3px; /* Reduced spacing between icon and text */
+}
+
+/* Fund Source Tag */
+.tag-fund-source {
+  background-color: #FF9800;
+}
+
+.tag-fund-source::before {
+  content: '\f1ad'; /* FontAwesome icon code for a building */
+  font-family: 'Font Awesome 5 Free'; /* Specify FontAwesome */
+  margin-right: 3px; /* Reduced spacing between icon and text */
 }
