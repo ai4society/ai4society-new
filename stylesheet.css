@@ -281,6 +281,23 @@ button:hover {
   transition: opacity 1s ease-in-out;
 }
 
+/* Caption Styles */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0; /* Align left edge with the image */
+  right: 0; /* Align right edge with the image */
+  background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  color: #fff;
+  text-align: center;
+  padding: 5px; /* Reduced padding */
+  font-size: 0.8em; /* Smaller font size */
+  border-radius: 5px; /* Adjusted border-radius */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Subtle shadow */
+  font-family: 'Arial', sans-serif; /* Font choice */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
