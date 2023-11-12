@@ -544,12 +544,13 @@ button:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Tag Styles */
 .funding-list li span.tag {
   display: inline-flex;
   align-items: center;
-  padding: 3px 8px; /* Reduced padding for smaller box */
-  margin-right: 3px; /* Reduced margin for closer spacing */
-  border-radius: 12px; /* Adjusted for smaller box */
+  padding: 3px 8px; /* Padding for smaller box */
+  margin-right: 3px; /* Margin for closer spacing */
+  border-radius: 6px; /* Subtle rounded corners */
   font-size: 0.75em; /* Smaller font size */
   color: white;
   font-weight: bold;
@@ -563,7 +564,7 @@ button:hover {
 .tag-fund-type::before {
   content: '\f0d6'; /* FontAwesome icon code for a gift */
   font-family: 'Font Awesome 5 Free'; /* Specify FontAwesome */
-  margin-right: 3px; /* Reduced spacing between icon and text */
+  margin-right: 3px; /* Spacing between icon and text */
 }
 
 /* Fund Source Tag */
@@ -574,5 +575,5 @@ button:hover {
 .tag-fund-source::before {
   content: '\f1ad'; /* FontAwesome icon code for a building */
   font-family: 'Font Awesome 5 Free'; /* Specify FontAwesome */
-  margin-right: 3px; /* Reduced spacing between icon and text */
+  margin-right: 3px; /* Spacing between icon and text */
 }
