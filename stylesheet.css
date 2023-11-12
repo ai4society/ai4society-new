@@ -530,21 +530,20 @@ button:hover {
 
 /* Funding Section Styles */
 .funding-list {
-  list-style-type: none;
-  padding: 0;
+  list-style-type: disc; /* Enable standard bullet points */
+  padding-left: 20px; /* Add padding to align the bullet points */
   margin: 0 0 20px;
 }
 
 .funding-list li {
-  background-color: #f2f2f2;
-  border: 1px solid #ddd;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove borders */
+  padding: 5px 0; /* Adjust padding */
+  margin-bottom: 5px; /* Adjust bottom margin */
+  border-radius: 0; /* Remove border radius */
+  box-shadow: none; /* Remove box shadow */
 }
 
-/* Tag Styles */
 .funding-list li span.tag {
   display: inline-flex;
   align-items: center;
