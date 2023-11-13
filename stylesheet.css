@@ -628,3 +628,25 @@ button:hover {
   transform: scale(1.1);
 }
 
+
+.highlight-planning {
+  border: 2px solid red;
+  background-color: #f9e4e4; /* Light red background */
+  padding: 10px; /* Optional: for some spacing around the content */
+  margin-bottom: 10px; /* Optional: space between boxes */
+}
+
+.highlight-rating {
+  border: 2px solid rgb(144, 0, 255);
+  background-color: rgb(232, 215, 245); /* Light red background */
+  padding: 10px; /* Optional: for some spacing around the content */
+  margin-bottom: 10px; /* Optional: space between boxes */
+}
+
+.highlight-others {
+  border: 2px solid rgb(255, 217, 0);
+  background-color: rgb(245, 240, 220); /* Light red background */
+  padding: 10px; /* Optional: for some spacing around the content */
+  margin-bottom: 10px; /* Optional: space between boxes */
+}
+
